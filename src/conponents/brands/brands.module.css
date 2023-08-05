@@ -1,0 +1,13 @@
+.container {
+  padding: 60px 185px 55px;
+  height: 186px;
+  background-color: var(--yellow);
+  color: #ebd96b;
+}
+
+.brandsList {
+  display: flex;
+  justify-content: space-between;
+  /* column-gap: 120px; */
+  mix-blend-mode: multiply;
+}
