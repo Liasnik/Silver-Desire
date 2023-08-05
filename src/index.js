@@ -4,13 +4,10 @@ import App from './App'
 import './styles/reset.css'
 import './styles/common.css'
 import 'tailwindcss/tailwind.css'
-import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 )
