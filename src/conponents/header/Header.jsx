@@ -1,9 +1,10 @@
 import style from './header.module.css'
-import logo from './../../image/icons/logo.svg'
+// import logo from './../../image/icons/logo.svg'
 import { NavLink } from 'react-router-dom'
 import { Modal } from '../modal/Modal'
 import AddUser from '../add_user/AddUser'
 import { useState } from 'react'
+import logo from './../../image/jewelry/264_055-20849.png'
 
 const Header = () => {
   const [modal, setModal] = useState(false)
@@ -17,7 +18,9 @@ const Header = () => {
       <div className="container">
         <div className={style.row}>
           <div className={style.logo}>
-            <img src={logo} alt="logo" />
+            <div className={style.logoImg}>
+              <img src={logo} alt="logo" />
+            </div>
             <span>Silver Desire</span>
           </div>
 

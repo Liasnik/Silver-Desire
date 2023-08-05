@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   color: white;
-  background-color: rgb(57, 52, 52);
+  background-color: rgb(68, 60, 60);
   z-index: 1;
 }
 
@@ -21,10 +21,8 @@
   column-gap: 13px;
 }
 
-.logo img {
-  background-color: rgb(249, 248, 248);
-  border-radius: 50%;
-  box-shadow: 2px 2px 6px 3px #ffffff;
+.logoImg {
+  width: 80px;
 }
 
 .logo span {

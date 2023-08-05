@@ -1,5 +1,6 @@
 import styles from './promo.module.css'
 import headerImg from './../../image/images/header-img.jpg'
+import jewelry from './../../image/jewelry/upload_15072023131132.png'
 import { NavLink } from 'react-router-dom'
 
 const Promo = () => {
@@ -33,7 +34,7 @@ const Promo = () => {
           </div>
 
           <div>
-            <img className={styles.img} src={headerImg} alt="promoImg" />
+            <img className={styles.img} src={jewelry} alt="promoImg" />
           </div>
         </div>
       </div>
