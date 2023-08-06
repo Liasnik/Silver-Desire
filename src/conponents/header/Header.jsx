@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { Modal } from '../modal/Modal'
 import AddUser from '../add_user/AddUser'
 import { useState } from 'react'
-import logo from './../../image/jewelry/264_055-20849.png'
+import logo from './../../image/jewelry/upload_15072023131132.png'
 
 const Header = () => {
   const [modal, setModal] = useState(false)
@@ -27,19 +27,19 @@ const Header = () => {
           <nav className={style.nav}>
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/">HOME</NavLink>
               </li>
               <li>
-                <NavLink to="/catalog">CATALOGUE</NavLink>
+                <NavLink to="catalog">CATALOGUE</NavLink>
               </li>
               <li>
-                <NavLink to="/catalog">FASHION</NavLink>
+                <NavLink to="catalog">FASHION</NavLink>
               </li>
               <li>
-                <NavLink to="/catalog">FAVOURITE</NavLink>
+                <NavLink to="catalog">FAVORITE</NavLink>
               </li>
               <li>
-                <NavLink to="/catalog">LIFESTYLE</NavLink>
+                <NavLink to="catalog">LIFESTYLE</NavLink>
               </li>
               <li>
                 <button

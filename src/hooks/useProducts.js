@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import axios, { AxiosError } from 'axios'
+import axios from 'axios'
 //import { Product } from '../components/Product'
 
 export function useProducts() {
@@ -16,7 +16,7 @@ export function useProducts() {
       setError('')
       setLoading(true)
       const response = await axios.get(
-        'https://fakestoreapi.com/products?limit=5'
+        'https://fakestoreapi.com/products?limit=20'
       )
       setProducts(response.data)
       setLoading(false)
