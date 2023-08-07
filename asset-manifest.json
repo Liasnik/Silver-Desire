@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Silver-Desire/static/css/main.5be553dd.css",
-    "main.js": "/Silver-Desire/static/js/main.f95118ae.js",
+    "main.js": "/Silver-Desire/static/js/main.250a4d8c.js",
     "static/media/upload_15072023131132.png": "/Silver-Desire/static/media/upload_15072023131132.6f58dc73b5b6a238d376.png",
     "static/media/cat-03.jpg": "/Silver-Desire/static/media/cat-03.eb55f780a8fbbaf39b98.jpg",
     "static/media/cat-01.jpg": "/Silver-Desire/static/media/cat-01.c4e2270f3eab9f7477cf.jpg",
@@ -12,10 +12,10 @@
     "static/media/arrow.svg": "/Silver-Desire/static/media/arrow.9d4f9d5e31a0e0b90396898109d19746.svg",
     "static/media/decor-yellow.svg": "/Silver-Desire/static/media/decor-yellow.a14a51327547871fd595.svg",
     "main.5be553dd.css.map": "/Silver-Desire/static/css/main.5be553dd.css.map",
-    "main.f95118ae.js.map": "/Silver-Desire/static/js/main.f95118ae.js.map"
+    "main.250a4d8c.js.map": "/Silver-Desire/static/js/main.250a4d8c.js.map"
   },
   "entrypoints": [
     "static/css/main.5be553dd.css",
-    "static/js/main.f95118ae.js"
+    "static/js/main.250a4d8c.js"
   ]
 }
