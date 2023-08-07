@@ -5,12 +5,19 @@ import { Modal } from '../modal/Modal'
 import AddUser from '../add_user/AddUser'
 import { useState } from 'react'
 import logo from './../../image/jewelry/upload_15072023131132.png'
+import { useProducts } from '../../hooks/useProducts'
 
 const Header = () => {
   const [modal, setModal] = useState(false)
+  const { products, loading, error, addProduct } = useProducts()
 
   function handlerClose() {
     setModal(!modal)
+  }
+
+  function onCreate(product) {
+    setModal(false)
+    addProduct(product)
   }
 
   return (
@@ -39,7 +46,7 @@ const Header = () => {
                 <NavLink to="catalog">FAVORITE</NavLink>
               </li>
               <li>
-                <NavLink to="catalog">LIFESTYLE</NavLink>
+                <NavLink to="users">USERS</NavLink>
               </li>
               <li>
                 <button
@@ -55,7 +62,7 @@ const Header = () => {
                   setModal={setModal}
                   title="Sign Up"
                 >
-                  <AddUser modal={modal} setModal={setModal} />
+                  <AddUser onCreate={onCreate} />
                 </Modal>
               )}
             </ul>

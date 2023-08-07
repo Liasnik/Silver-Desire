@@ -4,7 +4,7 @@ import ReactInputMask from 'react-input-mask'
 import axios from 'axios'
 import { ErrorMessage } from '../ErrorMessage'
 
-const AddUser = ({ setModal, modal }) => {
+const AddUser = ({ onCreate }) => {
   const [name, setName] = useState('')
   const [lastname, setLastname] = useState('')
   const [city, setCity] = useState('')
@@ -24,8 +24,8 @@ const AddUser = ({ setModal, modal }) => {
   const productData = {
     title: name,
     price: email,
-    description: city,
-    image: maskedValue,
+    description: maskedValue,
+    image: 'https://i.pravatar.cc',
     category: lastname,
   }
 
@@ -66,7 +66,7 @@ const AddUser = ({ setModal, modal }) => {
       return
     }
 
-    if (password.length < 8) {
+    if (password.length < 3) {
       return setErrorCountSymbol('минимум 8 символов')
     }
 
@@ -76,9 +76,8 @@ const AddUser = ({ setModal, modal }) => {
         productData
       )
       console.log(response.data)
+      onCreate(response.data)
     } catch (error) {}
-
-    setModal(!modal)
   }
 
   const handleEmailChange = (event) => {
@@ -112,7 +111,7 @@ const AddUser = ({ setModal, modal }) => {
         value={city}
         onChange={(e) => {
           setErrorLastName('')
-          setCity(capitalize(e.target.value))
+          setCity(e.target.value)
         }}
         type="text"
         placeholder="City"

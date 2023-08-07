@@ -3,18 +3,18 @@ import Home from './conponents/home/Home'
 import { ProductPage } from './conponents/catalog/PageProducts'
 import MyLayout from './conponents/MyLayuot'
 import { BrowserRouter } from 'react-router-dom'
+import { UsersPages } from './conponents/users/UsersPage'
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Routes>
-          <Route path="/" element={<MyLayout />}>
-            <Route index element={<Home />} />
-            <Route path="catalog" element={<ProductPage />} />
-          </Route>
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<MyLayout />}>
+          <Route index element={<Home />} />
+          <Route path="catalog" element={<ProductPage />} />
+          <Route path="users" element={<UsersPages />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }
