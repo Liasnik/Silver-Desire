@@ -1,5 +1,5 @@
 import style from './header.module.css'
-// import logo from './../../image/icons/logo.svg'
+
 import { NavLink } from 'react-router-dom'
 import { Modal } from '../modal/Modal'
 import AddUser from '../add_user/AddUser'
@@ -34,7 +34,7 @@ const Header = () => {
           <nav className={style.nav}>
             <ul>
               <li>
-                <NavLink to="/">HOME</NavLink>
+                <NavLink to="/Silver-Desire">HOME</NavLink>
               </li>
               <li>
                 <NavLink to="catalog">CATALOGUE</NavLink>

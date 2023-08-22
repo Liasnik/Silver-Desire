@@ -8,9 +8,9 @@ import { ModalState } from './conponents/context/ModalContext'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <ModalState>
-    <React.StrictMode>
+  <React.StrictMode>
+    <ModalState>
       <App />
-    </React.StrictMode>
-  </ModalState>
+    </ModalState>
+  </React.StrictMode>
 )

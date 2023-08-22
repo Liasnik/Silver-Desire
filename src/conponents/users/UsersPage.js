@@ -1,19 +1,43 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { ModalContext } from '../context/ModalContext'
 import { ErrorMessage } from '../ErrorMessage'
 import { Loader } from '../Loader'
 import { Modal } from '../modal/Modal'
-import { useProducts } from '../../hooks/useProducts'
-
 import '../style.css'
 import AddUser from '../add_user/AddUser'
-import { Product } from '../catalog/Product'
+import axios from 'axios'
+import { User } from './User'
 
 export function UsersPages() {
-  const { products, loading, error, addProduct } = useProducts()
   const { modal, open, close } = useContext(ModalContext)
 
-  console.log(products)
+  const [users, setUsers] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  function addProduct(product) {
+    setUsers((prev) => [...prev, product])
+  }
+
+  async function fetchUsers() {
+    try {
+      setError('')
+      setLoading(true)
+      const response = await axios.get('https://fakestoreapi.com/users')
+      setUsers(response.data)
+      setLoading(false)
+    } catch (error) {
+      // const error = e as AxiosError
+      setLoading(false)
+      setError(error.message)
+    }
+  }
+
+  useEffect(() => {
+    fetchUsers()
+  }, [])
+
+  console.log(users)
 
   const createHandler = (product) => {
     close()
@@ -26,8 +50,8 @@ export function UsersPages() {
       {loading && <Loader />}
       {error && <ErrorMessage error={error} />}
 
-      {products.map((product) => (
-        <Product product={product} key={product.id} />
+      {users.map((product) => (
+        <User product={product} key={product.id} />
       ))}
 
       {modal && (
