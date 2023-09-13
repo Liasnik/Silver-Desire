@@ -23,6 +23,7 @@
 
 .logoImg {
   width: 80px;
+  flex-shrink: 0;
 }
 
 .logo span {

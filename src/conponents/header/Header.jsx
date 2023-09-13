@@ -40,13 +40,13 @@ const Header = () => {
                 <NavLink to="catalog">CATALOGUE</NavLink>
               </li>
               <li>
-                <NavLink to="catalog">FASHION</NavLink>
-              </li>
-              <li>
-                <NavLink to="catalog">FAVORITE</NavLink>
+                <NavLink to="favorite">FAVORITE</NavLink>
               </li>
               <li>
                 <NavLink to="users">USERS</NavLink>
+              </li>
+              <li>
+                <NavLink to="cabinet">my cabinet</NavLink>
               </li>
               <li>
                 <button

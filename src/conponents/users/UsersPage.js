@@ -23,7 +23,7 @@ export function UsersPages() {
     try {
       setError('')
       setLoading(true)
-      const response = await axios.get('https://fakestoreapi.com/users')
+      const response = await axios.get('https://fakestoreapi.com/users?limit=5')
       setUsers(response.data)
       setLoading(false)
     } catch (error) {
@@ -55,14 +55,14 @@ export function UsersPages() {
       ))}
 
       {modal && (
-        <Modal title="Create new product" onClose={close}>
+        <Modal title="SignUp" onClose={close}>
           {/* <CreateProduct onCreate={createHandler} /> */}
           <AddUser onCreate={createHandler} />
         </Modal>
       )}
 
       <button
-        className="fixed bottom-5 right-5 rounded-full bg-red-700 text-white text-2xl px-4 py-2"
+        className="fixed bottom-12 right-12 rounded-full bg-red-700 text-white text-2xl px-4 py-2"
         // onClick={open}
         onClick={open}
       >

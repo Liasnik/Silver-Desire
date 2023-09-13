@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import styles from './addUser.module.css'
+import { useState } from 'react'
 import ReactInputMask from 'react-input-mask'
 import axios from 'axios'
 import { ErrorMessage } from '../ErrorMessage'
+import styles from './addUser.module.css'
 
 const AddUser = ({ onCreate }) => {
   const [name, setName] = useState('')
@@ -66,8 +66,10 @@ const AddUser = ({ onCreate }) => {
       return
     }
 
-    if (password.length < 3) {
-      return setErrorCountSymbol('минимум 8 символов')
+    if (password.length < 6) {
+      return setErrorCountSymbol(
+        ' password have to include minimum 6 characters'
+      )
     }
 
     try {
@@ -125,7 +127,7 @@ const AddUser = ({ onCreate }) => {
         placeholder="+99 (999) 999-99-99"
       />
       <input
-        type="text"
+        type="email"
         value={email}
         onChange={handleEmailChange}
         placeholder="email"
@@ -139,6 +141,7 @@ const AddUser = ({ onCreate }) => {
         }}
         placeholder="password"
       />
+      password have to include minimum 6 characters
       {errorConfirm && <ErrorMessage error={errorConfirm} />}
       {errorCountSymbol && <ErrorMessage error={errorCountSymbol} />}
       <input
@@ -150,7 +153,6 @@ const AddUser = ({ onCreate }) => {
         }}
         placeholder="confirm password"
       />
-
       <button type="submit">Submit</button>
     </form>
   )

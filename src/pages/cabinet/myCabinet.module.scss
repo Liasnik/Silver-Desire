@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  color: white;
+
+  h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    margin-top: 40px;
+    width: 450px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}

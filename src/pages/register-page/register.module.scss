@@ -1,0 +1,13 @@
+.h2 {
+  margin-top: 20px;
+  font-size: 22px;
+  a {
+    font-weight: 500;
+    color: blue;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
