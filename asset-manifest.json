@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Silver-Desire/static/css/main.e9cbf110.css",
+    "main.css": "/Silver-Desire/static/css/main.e9bc5930.css",
     "main.js": "/Silver-Desire/static/js/main.afb7e512.js",
     "static/media/na.png": "/Silver-Desire/static/media/na.eae823d961a1eaa2a7f4.png",
     "static/media/Sharm.png": "/Silver-Desire/static/media/Sharm.d53fa9e2b1bc6a55a532.png",
@@ -19,11 +19,11 @@
     "index.html": "/Silver-Desire/index.html",
     "static/media/arrow.svg": "/Silver-Desire/static/media/arrow.9d4f9d5e31a0e0b90396898109d19746.svg",
     "static/media/decor-yellow.svg": "/Silver-Desire/static/media/decor-yellow.a14a51327547871fd595.svg",
-    "main.e9cbf110.css.map": "/Silver-Desire/static/css/main.e9cbf110.css.map",
+    "main.e9bc5930.css.map": "/Silver-Desire/static/css/main.e9bc5930.css.map",
     "main.afb7e512.js.map": "/Silver-Desire/static/js/main.afb7e512.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9cbf110.css",
+    "static/css/main.e9bc5930.css",
     "static/js/main.afb7e512.js"
   ]
 }
