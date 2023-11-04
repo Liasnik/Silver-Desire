@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/Silver-Desire/static/css/main.20500321.css",
-    "main.js": "/Silver-Desire/static/js/main.cf52c10c.js",
+    "main.css": "/Silver-Desire/static/css/main.e9cbf110.css",
+    "main.js": "/Silver-Desire/static/js/main.afb7e512.js",
+    "static/media/na.png": "/Silver-Desire/static/media/na.eae823d961a1eaa2a7f4.png",
+    "static/media/Sharm.png": "/Silver-Desire/static/media/Sharm.d53fa9e2b1bc6a55a532.png",
+    "static/media/serejki.png": "/Silver-Desire/static/media/serejki.f0d8cb3b640d680b06d5.png",
+    "static/media/Ring.png": "/Silver-Desire/static/media/Ring.81bd9388982376071314.png",
     "static/media/upload_15072023131132.png": "/Silver-Desire/static/media/upload_15072023131132.6f58dc73b5b6a238d376.png",
+    "static/media/braslet.png": "/Silver-Desire/static/media/braslet.81bfb87cdcb2431dfcee.png",
     "static/media/cat-03.jpg": "/Silver-Desire/static/media/cat-03.eb55f780a8fbbaf39b98.jpg",
+    "static/media/zastejki-removebg-preview.png": "/Silver-Desire/static/media/zastejki-removebg-preview.c80aafd9ef1de6b9fa83.png",
     "static/media/cat-01.jpg": "/Silver-Desire/static/media/cat-01.c4e2270f3eab9f7477cf.jpg",
+    "static/media/pandoraMi.png": "/Silver-Desire/static/media/pandoraMi.2d0678a6222484a2b5cd.png",
     "static/media/cat-02.jpg": "/Silver-Desire/static/media/cat-02.da44a5e6d64780d948d6.jpg",
     "static/media/mini3321.png": "/Silver-Desire/static/media/mini3321.a305eeed4863a269bffe.png",
+    "static/media/петит2-removebg-preview.png": "/Silver-Desire/static/media/петит2-removebg-preview.9fa562e551b14dd9ff1b.png",
     "static/media/Amazon.png": "/Silver-Desire/static/media/Amazon.7897112af9316cea076c.png",
     "index.html": "/Silver-Desire/index.html",
     "static/media/arrow.svg": "/Silver-Desire/static/media/arrow.9d4f9d5e31a0e0b90396898109d19746.svg",
     "static/media/decor-yellow.svg": "/Silver-Desire/static/media/decor-yellow.a14a51327547871fd595.svg",
-    "main.20500321.css.map": "/Silver-Desire/static/css/main.20500321.css.map",
-    "main.cf52c10c.js.map": "/Silver-Desire/static/js/main.cf52c10c.js.map"
+    "main.e9cbf110.css.map": "/Silver-Desire/static/css/main.e9cbf110.css.map",
+    "main.afb7e512.js.map": "/Silver-Desire/static/js/main.afb7e512.js.map"
   },
   "entrypoints": [
-    "static/css/main.20500321.css",
-    "static/js/main.cf52c10c.js"
+    "static/css/main.e9cbf110.css",
+    "static/js/main.afb7e512.js"
   ]
 }
